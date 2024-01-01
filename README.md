@@ -1,0 +1,2 @@
+# coinflip
+cool figma free 
