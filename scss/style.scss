@@ -1,0 +1,83 @@
+//Common
+/*обнуление*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html {
+  height: 100%;
+  body {
+    height: 100%;
+    line-height: 1;
+    background-color: #0b0b0f;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+    .wrapper {
+      min-height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  ._container {
+    max-width: 1180px;
+    padding: 0 0.9375rem;
+    margin: 0 auto;
+    box-sizing: content-box;
+  }
+}
+
+.gradient-border {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(205deg, #24E2FF 20%, #BD58FE 85%);
+  
+  .button {
+    color: inherit;
+    display: flex;
+    width: 9.75rem;
+    height: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.625rem;
+    // border: 1px solid rgba(255, 255, 255, 0.47);
+    background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
+
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+
+    cursor: pointer;
+  }
+}
+
+@import "header";
