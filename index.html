@@ -9,7 +9,7 @@
     <title>Coinflip</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper _ibg">
       <header class="header">
         <div class="header__container _container">
           <a href="#" class="header__logo"><img src="img/header/logo.svg" alt="" /></a>
@@ -33,21 +33,95 @@
               </li>
             </ul>
             <div class="header__action action-header">
-              <div class="gradient-border exception">
-                <button class="action-header__button button button--border">
-                  <span>Sign in</span>
-                </button>
-              </div>
-              <div class="gradient-border">
-                <button class="action-header__button button">
-                  <span>Sign up</span>
-                </button>
-              </div>
+              <button class="action-header__button button_transparent"></button>
+              <button class="action-header__button button_gradient"></button>
             </div>
           </nav>
           <button type="button" class="icon-menu"><span></span></button>
         </div>
       </header>
+
+      <main class="page">
+
+        <section class="page__intro intro">
+          <div class="intro__container _container">
+            <h1 class="intro__heading heading">We make crypto clear and simple</h1>
+            <p class="intro__text">Buy, sell, and grow your crypto with CoinFlip, the platform dedicated to every trader at every level.</p>
+            <button class="intro__button button_gradient">Get Started</button>
+          </div>
+        </section>
+
+        <div class="page__services services">
+          <div class="services__container _container">
+            <img class="services__bg" src="img/bg/bg_layer2/stars_services.svg" alt="bg" />
+            <div class="services__body">
+              <div class="services__item">
+                <div class="services__headwrapper">
+                  <div class="services__icon">
+                    <img src="img/services/01.png" alt="icon" />
+                  </div>
+                  <h3 class="services__heading">Trade Desk</h3>
+                </div>
+                <p class="services__text text">Invest in crypto anytime, anywhere with our safe, secure, and easy to use online platform</p>
+                <a href="#" class="services__link">Get Started<img src="img/services/arrow.svg" alt="arrow" /></a>
+              </div>
+
+              <div class="services__item">
+                <div class="services__headwrapper">
+                  <div class="services__icon">
+                    <img src="img/services/02.png" alt="icon" />
+                  </div>
+                  <h3 class="services__heading">CoinFlip ATMs</h3>
+                </div>
+                <p class="services__text text">We have thousands of ATMs located across the U.S. where you can easily convert cash to crypto</p>
+                <a href="#" class="services__link">Find an ATM<img src="img/services/arrow.svg" alt="arrow" /></a>
+              </div>
+
+              <div class="services__item">
+                <div class="services__headwrapper">
+                  <div class="services__icon">
+                    <img src="img/services/03.png" alt="icon" />
+                  </div>
+                  <h3 class="services__heading">CoinFlip Wallet</h3>
+                </div>
+                <p class="services__text text">Store your growing investments in our non-custodial wallet that gives you access to a full suite of DeFi services in one place</p>
+                <a href="#" class="services__link">Download the App <img src="img/services/arrow.svg" alt="arrow" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="page__promo promo">
+          <div class="promo__container _container">
+            <img class="promo__bg star" src="img/bg/bg_layer3/star_promo.svg" alt="bg" />
+            <img class="promo__bg spring" src="img/bg/bg_layer3/spring_promo.svg" alt="bg" />
+            <h1 class="promo__heading heading">A crypto investment platform that invests in you</h1>
+            <p class="promo__text text">We invest more resources than any other platrom in making sure great support from real people is a click away, whenever you need it.</p>
+            <button class="promo__button button_gradient"></button>
+          </div>
+        </section>
+
+        <div class="page__support support">
+          <div class="support__container _container">
+            <div class="support__body">
+              <div class="support__item support__item_icon">
+                <img class="support__icon" src="img/support/shield.png" alt="icon shield">
+                <img class="support__icon_bg" src="img/support/bg_support.png" alt="bg" >
+              </div>
+              <div class="support__item support__heading">
+                <h1 class="heading">24/7 access to full service customer support</h1>
+              </div>
+              <div class="support__item support__text">
+                <p class="text">We invest more resources than any other platform in making sure great support from real people is a click away, whenever you need it.</p>
+              </div>
+              <div class="support__item support__button">
+                <button class="button button_transparent"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </main>
       <!--       
       <main class="page">
         <div class="page__main-block main-block">
@@ -480,8 +554,9 @@
           </div>
         </div>
       </footer> -->
+
+      <img class="bg_layer1" src="img/bg/bg_layer1/bg_layer1.jpg" alt="cover" />
     </div>
     <script src="js/script.js"></script>
   </body>
 </html>
-<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />

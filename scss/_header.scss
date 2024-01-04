@@ -16,6 +16,8 @@
   // .header__logo
 
   &__logo {
+    position: relative;
+    z-index: 10;
   }
 
   // .header__menu
@@ -38,7 +40,6 @@
   @media (max-width: 40rem) {
     & {
       flex-direction: column;
-
       position: fixed;
       top: 0;
       left: -100%;
@@ -48,11 +49,11 @@
       padding: 2.5rem 1.875rem 1.875rem 1.875rem;
       transition: left 0.3s ease 0s;
       overflow: auto;
+      z-index: 1;
     }
     &._active {
       left: 0;
     }
-
   }
 
   // .menu__list
@@ -80,47 +81,69 @@
         padding-right: 1rem;
       }
     }
-
-    @media (max-width: 40rem) {
-      font-size: 1.125rem;
+    &:first-of-type {
+      padding-left: 5.625rem;
+    }
+    @media (max-width: 56rem) {
+      &:first-of-type {
+        padding-left: 0;
+      }
     }
   }
 
   // .menu__link
   &__link {
     color: inherit;
-    @media (min-width: 40rem) and (max-width: 50.625rem) {
+    &:hover {
+      text-decoration: underline;
+    }
+    @media (min-width: 40rem) and (max-width: 56rem) {
       font-size: 0.75rem;
+    }
+    @media (max-width: 40rem) {
+      font-size: 1.125rem;
     }
   }
   .action-header {
     display: flex;
-    .gradient-border {
-      width: 6rem;
-      height: 2.5rem;
+    // .action-header__button
+    &__button:not(:last-of-type) {
+      margin-right: 0.75rem;
+    }
+    .button_transparent {
+      width: 5.875rem;
+      height: 2.375rem;
+      &:after {
+        content: "Sign in";
+      }
+      &:before {
+        width: 6rem;
+        height: 2.5rem;
+      }
       @media (max-width: 50.625rem) {
+        font-size: 0.875rem;
         width: 4.625rem;
-      }
-
-      &:not(:last-of-type) {
-        margin-right: 0.75rem;
-      }
-      // .action-header__button
-      .action-header__button {
-        width: 5.875rem;
-        height: 2.375rem;
-        @media (max-width: 50.625rem) {
-          font-size: 0.875rem;
-          width: 4.5rem;
+        &::before {
+          width: 4.75rem;
         }
       }
-      .button--border {
-        background: transparent;
-        border: 1px solid #fff;
-      }
     }
-    .gradient-border.exception {
-      background: transparent;
+
+    .button_gradient {
+      width: 6rem;
+      height: 2.5rem;
+      &::before {
+        width: 5.875rem;
+        height: 2.375rem;
+        content: "Sign up";
+      }
+      @media (max-width: 50.625rem) {
+        font-size: 0.875rem;
+        width: 4.75rem;
+        &::before {
+          width: 4.625rem;
+        }
+      }
     }
   }
 }
@@ -178,29 +201,29 @@
 
 //Burger alien
 
-@media (max-width: 767px) {
-  .menu__body {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    padding: 100px 30px 30px 30px;
-    transition: left 0.3s ease 0s;
-    overflow: auto;
-  }
-  .menu__body._active {
-    left: 0;
-  }
-  .menu__body::before {
-    content: "";
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 70px;
-    background-color: #912105;
-    z-index: 2;
-  }
-}
+// @media (max-width: 767px) {
+//   .menu__body {
+//     position: fixed;
+//     top: 0;
+//     left: -100%;
+//     width: 100%;
+//     height: 100%;
+//     background: rgba(0, 0, 0, 0.9);
+//     padding: 100px 30px 30px 30px;
+//     transition: left 0.3s ease 0s;
+//     overflow: auto;
+//   }
+//   .menu__body._active {
+//     left: 0;
+//   }
+//   .menu__body::before {
+//     content: "";
+//     position: fixed;
+//     width: 100%;
+//     top: 0;
+//     left: 0;
+//     height: 70px;
+//     background-color: #912105;
+//     z-index: 2;
+//   }
+// }
