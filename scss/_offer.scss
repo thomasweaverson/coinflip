@@ -1,0 +1,193 @@
+.offer {
+  padding-top: 16.25rem;
+  // .offer__container
+  @media (max-width: 920px) {
+    padding-top: 5rem;
+  }
+  &__container {
+    position: relative;
+  }
+  &__bg.gradient {
+    position: absolute;
+    right: -763px;
+    top: -765px;
+    z-index: -1;
+    @media (max-width: 750px) {
+      width: 500px;
+      right: -250px;
+      top: 0;
+    }
+  }
+  &__bg.spring {
+    position: absolute;
+    left: -962px;
+    top: -44px;
+    z-index: -2;
+    @media (max-width: 750px) {
+      width: 900px;
+      left: -600px;
+      top: 200px;
+    }
+  }
+  // .offer__heading
+
+  &__heading {
+    max-width: 50rem;
+  }
+
+  // .offer__text
+
+  &__text {
+    text-align: center;
+    max-width: 37.5rem;
+    margin: 1rem auto 2.25rem auto;
+  }
+
+  // .offer__link
+
+  &__link {
+  }
+
+  // .offer__table
+
+  &__table {
+  }
+}
+
+.table-offer {
+  margin-top: 3.125rem;
+  padding: 1.25rem 2rem;
+  @media (max-width: 670px) {
+    padding: 1rem;
+  }
+
+  border-radius: 25px;
+  background: #1a1b23;
+  // .table-offer__row
+
+  &__row {
+    height: 3.5rem;
+    display: grid;
+    grid-template-columns: 219fr 103fr 231fr 112fr 237px 114px;
+    gap: 0 1.25rem;
+    @media (max-width: 920px) {
+      grid-template-columns: 103fr 231fr 112fr 237px 114px;
+    }
+    @media (max-width: 760px) {
+      grid-template-columns: 69px 117px 72fr 214fr 54fr;
+    }
+    @media (max-width: 670px) {
+      grid-template-columns: 41fr 80fr 72fr 54fr;
+      gap: 0 0.625rem;
+    }
+    @media (max-width: 340px) {
+      grid-template-columns: 30px 82px 50px 1fr;
+      gap: .3125rem;
+    }
+  }
+
+  // .table-offer__product
+
+  &__product {
+    align-self: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+    @media (max-width: 920px) {
+      display: none;
+    }
+  }
+
+  // .table-offer__designation
+
+  &__designation {
+    align-self: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+
+    color: #b982ff;
+    @media (max-width: 670px) {
+      font-size: 0.875rem;
+    }
+  }
+
+  // .table-offer__price
+
+  &__price {
+    align-self: center;
+    justify-self: end;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+    @media (max-width: 670px) {
+      font-size: 0.875rem;
+    }
+  }
+
+  // .table-offer__grow
+
+  &__grow {
+    align-self: center;
+    justify-self: end;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+
+    color: #0dbb7c;
+    @media (max-width: 670px) {
+      font-size: 0.875rem;
+    }
+  }
+  &__grow_negative {
+    color: #ff8282;
+  }
+
+  // .table-offer__schedule
+
+  &__schedule {
+    justify-self: center;
+    @media (max-width: 670px) {
+      display: none;
+    }
+  }
+
+  // .table-offer__link
+
+  &__link {
+    align-self: center;
+
+    color: #fff;
+    .trade-icon {
+      display: none;
+    }
+    @media (max-width: 760px) {
+      justify-self: end;
+      .trade-text {
+        display: none;
+      }
+      .trade-icon {
+        display: block;
+        width: 3rem;
+        @media (max-width: 670px) {
+          width: 2rem;
+        }
+
+      }
+    }
+    @media (max-width: 340px) {
+      justify-self: center;
+    }
+  }
+
+  // .table-offer__divider
+
+  &__divider {
+    margin: 1rem 0;
+    height: 1px;
+    background: #2b2c3b;
+    @media (max-width: 670px) {
+      margin: 0.5rem 0;
+    }
+  }
+}

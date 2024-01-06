@@ -62,7 +62,7 @@ html {
   ._ibg {
     position: relative;
   }
-  ._ibg > img {
+  ._ibg > .bg_layer1 {
     position: absolute;
     width: 100%;
     top: 0;
@@ -72,10 +72,28 @@ html {
   }
   .bg_layer1 {
     @media (max-width: 780px) {
-      margin-top: 70px;
-      opacity: 0.4;
+      display: none;
     }
   }
+  .bg_layer1_mobile {
+    display: none;
+    @media (max-width: 780px) {
+      display: block;
+      position: absolute;
+      opacity: 0.3;
+      z-index: -1;
+      &.left{
+        left: -80px;
+        top: -130px;
+      }
+      &.right {
+        right: -300px;
+        top: -50px;
+      }
+    }
+
+  }
+
 }
 
 .button_transparent {
@@ -117,7 +135,7 @@ html {
       opacity: 0.9;
     }
   }
-  &:active{
+  &:active {
     scale: 0.98;
   }
 }
@@ -152,7 +170,6 @@ html {
     background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
 
     transition: filter 0.2s ease-in-out;
-
   }
 
   &:hover {
@@ -160,11 +177,10 @@ html {
       filter: brightness(1.3);
     }
   }
-  &:active{
+  &:active {
     scale: 0.98;
   }
 }
-
 
 .heading {
   // max-width: 48.75rem;
@@ -175,12 +191,12 @@ html {
   line-height: 1.3;
   @media (max-width: 46.875rem) {
     // max-width: 30rem;
-    font-size: 3rem;
-  }
-  @media (max-width: 430px) {
-    // max-width: 30rem;
     font-size: 2rem;
   }
+  // @media (max-width: 430px) {
+  //   // max-width: 30rem;
+  //   font-size: 2rem;
+  // }
 }
 
 .text {
@@ -190,8 +206,32 @@ html {
   line-height: 1.5;
 }
 
+.link {
+  text-decoration: none;
+  display: block;
+  color: #b982ff;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  img {
+    margin-left: .375rem;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 @import "header";
 @import "intro";
 @import "services";
 @import "promo";
 @import "support";
+@import "offer";
+@import "first-step";
+@import "subscribe";
+@import "footer"; 
