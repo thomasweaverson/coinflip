@@ -20,7 +20,9 @@
       position: absolute;
       top: -23.125rem;
       left: -37.5rem;
-      opacity: 0.5;
+      opacity: 0.4;
+      z-index: 2;
+      pointer-events: none;
       @media (max-width: 50rem) {
         top: -16.25rem;
       }
@@ -29,6 +31,8 @@
       position: absolute;
       top: -31.875rem;
       left: -35rem;
+      z-index: -1;
+      pointer-events: none;
     }
   }
 
@@ -62,11 +66,13 @@
 
   // .footer__info
   &__about {
+    position: relative;
     max-width: 23.75rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: start;
+    z-index: 2;
   }
   // .footer__logo
 
@@ -95,25 +101,7 @@
     margin-top: 1.5rem;
   }
 
-  // .footer__container
-
-  &__container {
-    position: relative;
-    .footer__bg_gradient {
-      position: absolute;
-      bottom: -8.5rem;
-      left: -37.5rem;
-      opacity: 0.5;
-      // z-index: -2;
-    }
-    .footer_bg_circles {
-      position: absolute;
-      bottom: -21.5625rem;
-      left: -35rem;
-    }
-  }
-
-  // .footer__copy
+    // .footer__copy
 
   &__copy {
     font-size: 0.75rem;
@@ -160,8 +148,6 @@
     margin-bottom: 1.5rem;
 
     text-wrap: nowrap;
-
-    position: relative;
     @media (max-width: 50rem) {
       cursor: pointer;
     }

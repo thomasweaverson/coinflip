@@ -58,6 +58,7 @@
 
   &__icon {
     display: flex;
+    pointer-events: none;
     align-items: center;
     justify-content: center;
     width: 5rem;

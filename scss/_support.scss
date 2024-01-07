@@ -35,6 +35,7 @@
       }
       .support__icon {
         position: absolute;
+        pointer-events: none;
         left: 11.3793103%;
         top: .875rem;
         @media (max-width: 61.875rem) {
@@ -52,6 +53,7 @@
       }
       .support__icon_bg {
         position: absolute;
+        pointer-events: none;
         left: -29.3125rem;
         top: -28.0625rem;
         z-index: -10;

@@ -31,6 +31,7 @@
 
     &_icon {
       position: relative;
+      pointer-events: none;
       @media (max-width: 32.5rem) {
         grid-row: 2 / 3;
         grid-column: 1 / 4;
@@ -39,6 +40,7 @@
         position: absolute;
         left: 0;
         top: -1.5625rem;
+        pointer-events: none;
         @media (max-width: 61.875rem) {
           width: 17.5rem;
           left: unset;
@@ -55,6 +57,7 @@
       }
       .first-step__icon_bg {
         position: absolute;
+        pointer-events: none;
         left: -13.125rem;
         top: -34.375rem;
         z-index: -10;
